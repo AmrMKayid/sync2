@@ -22,11 +22,11 @@ new_branch_update() {
       (git log -1)
   )
 
-  echo "\nCommiting .... ${last_commit_msg}\n"
+  echo "\nCommiting..... \n${last_commit_msg}\n"
 
   cd $RL_PUBLIC_FOLDER/
   git pull $RL_PUBLIC_REPO_URL
-  update_branch="update_${now}"
+  update_branch="update-${now}"
 
   echo "\nCheckout out new branch: ${update_branch}\n"
   git checkout -B $update_branch
