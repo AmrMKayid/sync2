@@ -1,1 +1,1 @@
-print("Random Agent")
+print("Better Random Agent! :D")
