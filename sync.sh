@@ -16,11 +16,13 @@ clone_and_sync() {
 }
 
 new_branch_update() {
-  now=$(date +'%d/%m/%Y')
+  now=$(date +'%d-%m-%Y')
   last_commit_msg=$(
-    cd $ROOT_DIRECTORY &
-    (git log -1)
+    cd $ROOT_DIRECTORY &&
+      (git log -1)
   )
+
+  echo "Commiting .... ${last_commit_msg}"
 
   cd $RL_PUBLIC_FOLDER/
   git pull $RL_PUBLIC_REPO_URL
