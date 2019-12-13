@@ -1,0 +1,2 @@
+NAME='TEST'
+VERSION='v0.01'
