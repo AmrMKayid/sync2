@@ -1,2 +1,0 @@
-NAME = 'TEST'
-VERSION = 'v0.02'
